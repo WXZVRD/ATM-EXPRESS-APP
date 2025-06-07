@@ -18,8 +18,6 @@ export default class DB {
                 database: process.env.POSTGRES_DB,
                 port: Number(process.env.POSTGRES_PORT),
                 ssl: false,
-                application_name: "gta",
-                options: "-c search_path=gta"
             });
 
             DB.instance = pool;
